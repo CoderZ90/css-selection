@@ -1,0 +1,43 @@
+/* what is css selection - it is basically when you select a text or anything in the website you notice the color set in your pc by default shows but to change it according to your website theme you need to write some code for it :)*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  min-height: 100vh;
+  background: #f4f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h2 {
+  font-size: 52px;
+  text-align: center;
+  color: #222;
+}
+p {
+  color: #777;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+/* Now the main part starts */
+/* so if you want to change the selection of the whole website you can do it like this */
+/* ::selection {
+  color: #fff;
+  background: #4561ff;
+} */
+/* if you want to change for particular thing then */
+h2::selection {
+  background: #4561ff;
+  color: #fff;
+  /* you can also decrease font weight or apply text shadow if you want to like this*/
+}
+p::selection {
+  background: #111317;
+  color: #fff;
+}
